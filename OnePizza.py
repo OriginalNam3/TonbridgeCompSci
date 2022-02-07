@@ -1,3 +1,11 @@
+# You are opening a small pizzeria. In fact, your pizzeria is so small that you decided to offer only one type of pizza. Now you need to decide what ingredients to include (peppers? tomatoes? both?).
+
+# Everyone has their own pizza preferences. Each of your potential clients has some ingredients they like, and maybe some ingredients they dislike. Each client will come to your pizzeria if both conditions are true:
+
+# all the ingredients they like are on the pizza, and
+# none of the ingredients they dislike are on the pizza
+# Each client is OK with additional ingredients they neither like or dislike being present on the pizza. Your task is to choose which ingredients to put on your only pizza type, to maximize the number of clients that will visit your pizzeria.
+
 c = int(input())
 d = []
 g = [[] for i in range(c)]
@@ -13,10 +21,6 @@ for i in range(c):
     for j in range(len(d)):
         if [k for k in l if k in d[j][1]] or [k for k in dl if k in d[j][0]]:
             g[i].append(j)
-# c = 10
-# d = [[[i], []] for i in range(10)]
-# g = [[5, 6, 7, 9], [2, 6, 7], [], [8], [0, 2, 7, 9], [0, 1, 8], [0, 1, 5], [4, 6, 9], [0, 2, 5, 8]]
-
 
 h = [len(lst) for lst in g]
 
@@ -43,18 +47,3 @@ i = list(i)
 s = str(len(i)) + ' '
 for ing in i:  s += ing + ' '
 print(s)
-
-
-
-#     print(len(d))
-#     for e in d:
-#         if not [i for i in l if i in e[2]] and not [i for i in dl if i in e[1]]:
-#             d.append([e[0] + 1, e[1] + [i for i in l if i not in e[1]], e[2] + [i for i in dl if i not in e[2]]])
-#     d.append([1, l, dl])
-#     d.sort()
-#
-# ic = [e[0] for e in d]
-# i = d[ic.index(max(ic))][1]
-# s = str(len(i)) + ' '
-# for ing in i:  s += ing + ' '
-# print(s)
