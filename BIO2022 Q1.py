@@ -1,5 +1,3 @@
-print('DONALD CHUI')
-print('TONBRIDGE SCHOOL')
 alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 encrypted = input()
 encrypt = list(encrypted)
