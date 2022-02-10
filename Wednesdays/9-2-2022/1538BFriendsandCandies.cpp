@@ -21,3 +21,4 @@ int main() {
 	}
 	return 0;
 }
+//Make sure you submit in C++20 (GNU C++20 (64)	on Codeforces). Code may TLE (time limit exceeded) on lower versions of C++.
