@@ -10,11 +10,12 @@ for _ in range(n):
     d.append(nd)
 
 
-def get_time(c):
+def get_time(c):  # Get total time taken at point c
     d_ = [abs(p[i]-c) - d[i] if d[i] < abs(p[i]-c) else 0 for i in range(n)]
     t = sum(d_[i] * w[i] for i in range(len(w)))
     return t
 
+# Binary search
 
 def search(start, end):
     if start == end:
