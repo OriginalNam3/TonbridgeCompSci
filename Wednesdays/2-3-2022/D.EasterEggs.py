@@ -1,5 +1,3 @@
-# This problem 
-
 n = int(input())
 
 colours = ['R', 'O', 'Y', 'G', 'B', 'I', 'V']
